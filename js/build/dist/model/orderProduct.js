@@ -1,0 +1,1 @@
+define([],function(){var e=function(){var e=null,t=0,n=0;this.getProduct=function(){return e},this.setProduct=function(t){e=t},this.getUnits=function(){return t},this.setUnits=function(e){t=e},this.getPrice=function(){return n},this.setPrice=function(e){n=e}};return e});

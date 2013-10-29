@@ -1,0 +1,50 @@
+{
+    "products":
+    [
+        {
+            "id": "001",
+            "name": "Anillo de diamantes",
+            "desc": "Anillo de diamantes.",
+            "img": "",
+            "price": "125",
+            "weight": "0.35",
+            "iva": "21"
+        },
+        {
+            "id": "002",
+            "name": "Reloj de plata",
+            "desc": "Reloj de plata.",
+            "img": "",
+            "price": "236",
+            "weight": "0.95",
+            "iva": "21"
+        },
+        {
+            "id": "003",
+            "name": "Cadena de oro",
+            "desc": "Cadena de oro.",
+            "img": "",
+            "price": "78",
+            "weight": "0.05",
+            "iva": "21"
+        },
+        {
+            "id": "004",
+            "name": "Zapatos de piel",
+            "desc": "Zapatos de piel.",
+            "img": "",
+            "price": "98",
+            "weight": "2.35",
+            "iva": "21"
+        },
+        {
+            "id": "005",
+            "name": "Corbata de seda",
+            "desc": "Corbata de seda.",
+            "img": "",
+            "price": "110",
+            "weight": "0.15",
+            "iva": "21"
+        }
+    ]
+}

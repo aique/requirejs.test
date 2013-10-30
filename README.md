@@ -5,7 +5,7 @@ Aplicación modular de ejemplo utilizando Requirejs
 
 Estructura
 ==========
-
+<pre>
 + js
 |
 + --- + app
@@ -42,3 +42,4 @@ Estructura
       + requirejs
       |
       + --- require.js: Librería Requirejs
+</pre>

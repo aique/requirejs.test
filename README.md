@@ -27,7 +27,7 @@ Estructura de la aplicación
 <pre>
 + js
 |
-+ --- + app
++ --- + app: Además de los siguientes directorios, aquí se almacenarán los ficheros con los métodos main de cada sección
 |     |
 |     + controllers: En este directorio se encuentran los distintos controladores de la aplicación
 |     |
@@ -55,10 +55,16 @@ Estructura de la aplicación
 |
 |
 + --- + lib: Ficheros con las librerías JavaScript necesarias. Contendrá al menos las aquí definidas
-      |
-      + jquery.js: Librería jQuery
-      |
-      + requirejs
-      |
-      + --- require.js: Librería Requirejs
+|     |
+|     + jquery.js: Librería jQuery
+|     |
+|     + requirejs
+|     |
+|     + --- require.js: Librería Requirejs
+|
+|
++ --- common.js: Fichero con la configuración de la librería Requirejs
+|
+|
++ --- text.js: Plugin para la carga de ficheros de texto mediante Requirejs
 </pre>

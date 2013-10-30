@@ -3,8 +3,27 @@ requirejs.test
 
 Aplicación modular de ejemplo utilizando Requirejs
 
-Estructura
-==========
+Funcionalidad
+=============
+
+Actualmente no dispone de un carrito. Una llamada PHP dentro de la sección
+order.php simula una respuesta del servidor con el contenido del carrito que
+actualmente está asociado al usuario.
+
+Tampoco la funcionalidad de añadir productos desde el menú principal está
+implementada. Simplemente muestra un mensaje como ejemplo de la correcta
+recepción del evento por parte del código JavaScript.
+
+Secciones
+=========
+
+Se compone de dos secciones, una contenida en el fichero index.html que simula
+la página principal de la tienda donde se muestran todos los productos
+disponibles y otra contenida en el fichero order.php, que simula la sección
+de consulta del carrito de la compra.
+
+Estructura de la aplicación
+===========================
 <pre>
 + js
 |

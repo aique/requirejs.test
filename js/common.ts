@@ -1,8 +1,11 @@
 /// <reference path="./def/requirejs.d.ts" />
+
 /*
-* En este fichero se incluye la configuración de la librería requirejs.
-*/
-require.config({
+ * En este fichero se incluye la configuración de la librería requirejs.
+ */
+
+require.config(
+{
     baseUrl: 'js',
     paths: {
         controllers: 'app/controllers',
@@ -14,4 +17,3 @@ require.config({
         jquery: 'lib/jquery'
     }
 });
-//# sourceMappingURL=common.js.map

@@ -1,88 +1,73 @@
-/*
- * Entidad que representa un producto.
- */
-define([], function ()
-{
-    var Product = function()
-    {
-        var id = null;
-        var name = null;
-        var description = null;
-        var img = null;
-        var price = 0;
-        var tax = 0;
-        var weight = 0;
-        
-        this.getId = function()
-        {
-            return id;
+define(["require", "exports"], function(require, exports) {
+    /*
+    * Entidad que representa un producto.
+    */
+    var Product = (function () {
+        function Product() {
+            this.id = null;
+            this.name = null;
+            this.description = null;
+            this.img = null;
+            this.price = 0;
+            this.tax = 0;
+            this.weight = 0;
+        }
+        Product.prototype.getId = function () {
+            return this.id;
         };
-        
-        this.setId = function(newId)
-        {
-            id = newId;
+
+        Product.prototype.setId = function (id) {
+            this.id = id;
         };
-        
-        this.getName = function()
-        {
-            return name;
+
+        Product.prototype.getName = function () {
+            return this.name;
         };
-        
-        this.setName = function(newName)
-        {
-            name = newName;
+
+        Product.prototype.setName = function (name) {
+            this.name = name;
         };
-        
-        this.getDescription = function()
-        {
-            return description;
+
+        Product.prototype.getDescription = function () {
+            return this.description;
         };
-        
-        this.setDescription = function(newDescription)
-        {
-            description = newDescription;
+
+        Product.prototype.setDescription = function (description) {
+            this.description = description;
         };
-        
-        this.getImg = function()
-        {
-            return img;
+
+        Product.prototype.getImg = function () {
+            return this.img;
         };
-        
-        this.setImg = function(newImg)
-        {
-            img = newImg;
+
+        Product.prototype.setImg = function (img) {
+            this.img = img;
         };
-        
-        this.getPrice = function()
-        {
-            return price;
+
+        Product.prototype.getPrice = function () {
+            return this.price;
         };
-        
-        this.setPrice = function(newPrice)
-        {
-            price = newPrice;
+
+        Product.prototype.setPrice = function (price) {
+            this.price = price;
         };
-        
-        this.getTax = function()
-        {
-            return tax;
+
+        Product.prototype.getTax = function () {
+            return this.tax;
         };
-        
-        this.setTax = function(newTax)
-        {
-            tax = newTax;
+
+        Product.prototype.setTax = function (tax) {
+            this.tax = tax;
         };
-        
-        this.getWeight = function()
-        {
-            return weight;
+
+        Product.prototype.getWeight = function () {
+            return this.weight;
         };
-        
-        this.setWeight = function(newWeight)
-        {
-            weight = newWeight;
+
+        Product.prototype.setWeight = function (weight) {
+            this.weight = weight;
         };
-    };
- 
-    return Product;
+        return Product;
+    })();
+    exports.Product = Product;
 });

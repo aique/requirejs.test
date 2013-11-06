@@ -2,7 +2,7 @@
     "products":
     [
         {
-            "id": "001",
+            "id": "1",
             "name": "Anillo de diamantes",
             "desc": "Anillo de diamantes.",
             "img": "",
@@ -11,7 +11,7 @@
             "iva": "21"
         },
         {
-            "id": "002",
+            "id": "2",
             "name": "Reloj de plata",
             "desc": "Reloj de plata.",
             "img": "",
@@ -20,7 +20,7 @@
             "iva": "21"
         },
         {
-            "id": "003",
+            "id": "3",
             "name": "Cadena de oro",
             "desc": "Cadena de oro.",
             "img": "",
@@ -29,7 +29,7 @@
             "iva": "21"
         },
         {
-            "id": "004",
+            "id": "4",
             "name": "Zapatos de piel",
             "desc": "Zapatos de piel.",
             "img": "",
@@ -38,7 +38,7 @@
             "iva": "21"
         },
         {
-            "id": "005",
+            "id": "5",
             "name": "Corbata de seda",
             "desc": "Corbata de seda.",
             "img": "",

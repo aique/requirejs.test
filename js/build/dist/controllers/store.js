@@ -1,1 +1,0 @@
-define([],function(){var e=function(){};return e.init=function(){require(["services/storeServices","views/productView"],function(e,t){t.printProductList(e.loadStoreData())})},e});

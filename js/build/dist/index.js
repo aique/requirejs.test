@@ -1,1 +1,0 @@
-require(["jquery","controllers/store"],function(e,t){t.init()});

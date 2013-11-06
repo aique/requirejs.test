@@ -14,4 +14,3 @@ require.config({
         jquery: 'lib/jquery'
     }
 });
-//# sourceMappingURL=common.js.map

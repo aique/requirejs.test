@@ -1,47 +1,46 @@
-/*
- * Entidad que representa un producto añadido al pedido.
- * 
- * Además del producto también cuenta con el número de unidades que se han
- * solicitado de él y el precio total de este conjunto de productos.
- */
-define([], function ()
-{
-    var OrderProduct = function()
-    {
-        var product = null;
-        var units = 0;
-        var price = 0;
-        
-        this.getProduct = function()
-        {
-            return product;
+/// <reference path="./product.ts" />
+define(["require", "exports"], function(require, exports) {
+    
+
+    /*
+    * Entidad que representa un producto añadido al pedido.
+    *
+    * Además del producto también cuenta con el número de unidades que se han
+    * solicitado de él y el precio total de este conjunto de productos.
+    */
+    var OrderProduct = (function () {
+        function OrderProduct() {
+        }
+        OrderProduct.prototype.constructor = function () {
+            this.product = null;
+            this.units = 0;
+            this.price = 0;
         };
-        
-        this.setProduct = function(newProduct)
-        {
-            product = newProduct;
+
+        OrderProduct.prototype.getProduct = function () {
+            return this.product;
         };
-        
-        this.getUnits = function()
-        {
-            return units;
+
+        OrderProduct.prototype.setProduct = function (product) {
+            this.product = product;
         };
-        
-        this.setUnits = function(newUnits)
-        {
-            units = newUnits;
+
+        OrderProduct.prototype.getUnits = function () {
+            return this.units;
         };
-        
-        this.getPrice = function()
-        {
-            return price;
+
+        OrderProduct.prototype.setUnits = function (units) {
+            this.units = units;
         };
-        
-        this.setPrice = function(newPrice)
-        {
-            price = newPrice;
+
+        OrderProduct.prototype.getPrice = function () {
+            return this.price;
         };
-    };
- 
-    return OrderProduct;
+
+        OrderProduct.prototype.setPrice = function (price) {
+            this.price = price;
+        };
+        return OrderProduct;
+    })();
+    exports.OrderProduct = OrderProduct;
 });

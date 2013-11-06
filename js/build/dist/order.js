@@ -1,1 +1,0 @@
-require(["jquery","controllers/order"],function(e,t){t.init()});

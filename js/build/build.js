@@ -1,6 +1,7 @@
 ({
     appDir: "../app",
     baseUrl: "..",
+    mainConfigFile: '../common.js',
     paths: {
         controllers: 'app/controllers',
         services: 'app/services',
@@ -11,8 +12,18 @@
         jquery: "lib/jquery"
     },
     modules:
-    [{
-        name: "common"
-    }],
+    [
+        {
+            name: "common"
+        },
+        {
+            name: "index",
+            exclude: ["common"]
+        },
+        {
+            name: "order",
+            exclude: ["common"]
+        }],
+    fileExclusionRegExp: /\.ts|\.js.map$/,
     dir: "dist"
 })

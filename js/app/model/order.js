@@ -1,33 +1,34 @@
-/*
- * Entidad que representa un pedido.
- */
-define([], function ()
-{
-    var Order = function()
-    {
-        var orderProducts = new Array();
-        var price = 0;
-        
-        this.getOrderProducts = function()
-        {
-            return orderProducts;
+/// <reference path="./orderProduct.ts" />
+define(["require", "exports"], function(require, exports) {
+    
+
+    /*
+    * Entidad que representa un pedido.
+    */
+    var Order = (function () {
+        function Order() {
+        }
+        Order.prototype.constructor = function () {
+            this.orderProducts = [];
+            this.price = 0;
         };
-        
-        this.setOrderProducts = function(newOrderProducts)
-        {
-            orderProducts = newOrderProducts;
+
+        Order.prototype.getOrderProducts = function () {
+            return this.orderProducts;
         };
-        
-        this.getPrice = function()
-        {
-            return price;
+
+        Order.prototype.setOrderProducts = function (orderProducts) {
+            this.orderProducts = orderProducts;
         };
-        
-        this.setPrice = function(newPrice)
-        {
-            price = newPrice;
+
+        Order.prototype.getPrice = function () {
+            return this.price;
         };
-    };
- 
-    return Order;
+
+        Order.prototype.setPrice = function (price) {
+            this.price = price;
+        };
+        return Order;
+    })();
+    exports.Order = Order;
 });

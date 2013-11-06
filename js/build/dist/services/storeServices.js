@@ -1,1 +1,0 @@
-define(["data/productData"],function(e){var t=function(){};return t.loadStoreData=function(){return e.getProducts()},t});
